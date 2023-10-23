@@ -1,0 +1,3 @@
+select count(*)
+from R1 as r1, R2 as r2
+where r1.to_id = r2.from_id and r1.from_id != r2.to_id;

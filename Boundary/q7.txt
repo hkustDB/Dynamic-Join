@@ -1,0 +1,6 @@
+customer|ck
+orders|ck
+orders|ok
+lineitem|ok
+lineitem|sk
+supplier|sk

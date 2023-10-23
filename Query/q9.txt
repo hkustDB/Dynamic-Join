@@ -1,0 +1,3 @@
+select count(*)
+from supplier, partsupp, lineitem, orders
+where supplier.sk = partsupp.sk and partsupp.sk = lineitem.sk and partsupp.pk=lineitem.pk and lineitem.ok=orders.ok;

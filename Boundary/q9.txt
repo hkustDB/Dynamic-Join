@@ -1,0 +1,6 @@
+supplier|sk
+partsupp|sk
+partsupp|skpk
+lineitem|skpk
+lineitem|ok
+orders|ok

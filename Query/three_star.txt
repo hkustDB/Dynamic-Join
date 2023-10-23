@@ -1,0 +1,8 @@
+SELECT SUM(t.count_product)
+FROM (
+  SELECT r1.from_id, COUNT(*) * COUNT(r2.to_id) * COUNT(r3.to_id) AS count_product
+  FROM R1 r1
+  INNER JOIN R2 r2 ON r1.from_id = r2.from_id
+  INNER JOIN R3 r3 ON r2.from_id = r3.from_id
+  GROUP BY r1.from_id
+) t;
